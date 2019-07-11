@@ -1,0 +1,11 @@
+--------------------linux 连接github------------------------------
+$ apt-get install git
+$ git config --global user.name "YOUR NAME"
+$ git config --global user.email "YOUR EMAIL ADDRESS"
+$ ssh-keygen -t rsa -C "YOUR EMAIL ADDRESS"
+
+$ ssh-agent bash
+$ ssh-agent -s
+$ ssh-add ~/.ssh/id_rsa
+$ ssh -T git@github.com
+------------------------------------------------------------------
